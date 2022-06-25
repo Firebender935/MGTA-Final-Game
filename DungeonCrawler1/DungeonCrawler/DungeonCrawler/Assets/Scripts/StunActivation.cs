@@ -40,8 +40,8 @@ public class StunActivation : MonoBehaviour
         if(upTimer >= upTime)
         {
             stunned = false;
-            upTimer = 0;
             stunAoE.SetActive(false);
+            upTimer = 0;
         }
     }
 
