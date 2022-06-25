@@ -83,13 +83,13 @@ public class ShopUIControl : MonoBehaviour
     {
         if (GameManager.Instance.GetHealth() < 150)
         {
-            if (GameManager.Instance.gems >= 5)
+            if (GameManager.Instance.gems >= 10)
             {
                 healGemLack.SetActive(false);
                 GameManager.Instance.AddHealth(10);
-                GameManager.Instance.RemoveGems(5);
+                GameManager.Instance.RemoveGems(10);
             }
-            else if (GameManager.Instance.gems < 5)
+            else if (GameManager.Instance.gems < 10)
             {
                 healGemLack.SetActive(true);
             }
